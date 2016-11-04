@@ -100,7 +100,7 @@
 	                        <div class="dropdown" id="motor">
 	                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Motor
 	                          <span class="caret"></span></button>
-	                          <ul class="dropdown-menu text-right">
+	                          <ul class="dropdown-menu text-right" >
 	                            <li><a href="#" data-value="775pro">775pro</a></li>
 	                            <li><a href="#">CIM</a></li>
 	                            <li><a href="#">MiniCIM</a></li>
@@ -628,16 +628,17 @@
     <script src="js/calculator.js"></script>
     
     <script>
+    var motorvalue = document.getElementById("motor");
+    console.log(motorvalue);
     $(".dropdown").find('.motor').html("Select <span class='caret'></span>");
-    
-    console(script);
-    $(".dropdown-menu li a").click(
-    		console('data-value');
-		    	$(this).parents(".dropdown").find('.motor').val($(775pro).data('value'));
-		    	$('#units').val($(this).attr('data-value'));
-		    	console('data-value');
-    			}
-    		);
+
+//    $(".dropdown-menu li a").click($(this).parents(".dropdown").find('.motor').val($(775pro).data('value')));
+//     		console('data-value');
+// 		    	$(this).parents(".dropdown").find('.motor').val($(775pro).data('value'));
+// 		    	$('#units').val($(this).attr('data-value'));
+// 		    	alert(value);
+//     			}
+//     		);
 
 // 	   function callThisFunction() {
 // 	       var dropdown = document.getElementById("motor");
