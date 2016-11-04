@@ -16,6 +16,7 @@
 
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -88,59 +89,61 @@
                         <p class="help-block text-danger "></p>
                     </div>
                 </div>
-                <div class="row text-left">
-                    <div class="col-lg-6 text-left">
-                        <div class="intro-text">
-                            <p class="text-right skills">What motor do you want to use?</span>
-                        </div>
-                     </div>
-                     <div class="col-lg-6">
-                        <div class="dropdown">
-                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Motor
-                          <span class="caret"></span></button>
-                          <ul class="dropdown-menu text-right">
-                            <li><a href="#">775pro</a></li>
-                            <li><a href="#">CIM</a></li>
-                            <li><a href="#">MiniCIM</a></li>
-                          </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row text-left">
-                    <div class="col-lg-6 text-left">
-                        <div class="intro-text">
-                            <p class="text-right skills">How many motors do you want to use?</p>
-                        </div>
-                     </div>
-                     <div class="col-lg-6">
-                        <div class="dropdown">
-                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Number of Motors
-                          <span class="caret text-right"></span></button>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                          </ul>
-                        </div>
-                </div>
-                </div>
-                <div class="row text-left">
-                    <div class="col-lg-6 text-left">
-                        <div class="intro-text">
-                            <p class="text-right skills">What is your defining requirement?</p>
-                        </div>
-                     </div>
-                     <div class="col-lg-6">
-                        <div class="dropdown">
-                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Defining Requirement
-                          <span class="caret"></span></button>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">Ratio</a></li>
-                            <li><a href="#">Output RPM</a></li>
-                            <li><a href="#">Output Torque</a></li>
-                          </ul>
-                        </div>
-                    </div>
+                <div class="inputs">
+	                <div class="row text-left">
+	                    <div class="col-lg-6 text-left">
+	                        <div class="intro-text">
+	                            <p class="text-right skills">What motor do you want to use?</p>
+	                        </div>
+	                     </div>
+	                     <div class="col-lg-6">
+	                        <div class="dropdown" id="motor">
+	                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Motor
+	                          <span class="caret"></span></button>
+	                          <ul class="dropdown-menu text-right">
+	                            <li><a href="#" data-value="775pro">775pro</a></li>
+	                            <li><a href="#">CIM</a></li>
+	                            <li><a href="#">MiniCIM</a></li>
+	                          </ul>
+	                        </div>
+	                    </div>
+	                </div>
+<!-- 	                <div class="row text-left"> -->
+<!-- 	                    <div class="col-lg-6 text-left"> -->
+<!-- 	                        <div class="intro-text"> -->
+<!-- 	                            <p class="text-right skills">How many motors do you want to use?</p> -->
+<!-- 	                        </div> -->
+<!-- 	                     </div> -->
+<!-- 	                     <div class="col-lg-6"> -->
+<!-- 	                        <div class="dropdown"> -->
+<!-- 	                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Number of Motors -->
+<!-- 	                          <span class="caret text-right"></span></button> -->
+<!-- 	                          <ul class="dropdown-menu"> -->
+<!-- 	                            <li><a href="#">1</a></li> -->
+<!-- 	                            <li><a href="#">2</a></li> -->
+<!-- 	                            <li><a href="#">3</a></li> -->
+<!-- 	                          </ul> -->
+<!-- 	                        </div> -->
+<!-- 	                </div> -->
+<!-- 	                </div> -->
+<!-- 	                <div class="row text-left"> -->
+<!-- 	                    <div class="col-lg-6 text-left"> -->
+<!-- 	                        <div class="intro-text"> -->
+<!-- 	                            <p class="text-right skills">What is your defining requirement?</p> -->
+<!-- 	                        </div> -->
+<!-- 	                     </div> -->
+<!-- 	                     <div class="col-lg-6"> -->
+<!-- 	                        <div class="dropdown"> -->
+<!-- 	                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Defining Requirement -->
+<!-- 	                          <span class="caret"></span></button> -->
+<!-- 	                          <ul class="dropdown-menu"> -->
+<!-- 	                            <li><a href="#">Ratio</a></li> -->
+<!-- 	                            <li><a href="#">Output RPM</a></li> -->
+<!-- 	                            <li><a href="#">Output Torque</a></li> -->
+<!-- 	                          </ul> -->
+<!-- 	                        </div> -->
+<!-- 	                    </div> -->
+<!-- 	                </div> -->
                 </div>
         </div>
     </header>
@@ -155,7 +158,34 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
+				<div id="calculator">
+					<!-- Screen and clear key -->
+					<div class="top">
+						<span class="clear">C</span>
+						<div class="screen"></div>
+					</div>
+					
+					<div class="keys">
+						<!-- operators and other keys -->
+						<span>7</span>
+						<span>8</span>
+						<span>9</span>
+						<span class="operator">+</span>
+						<span>4</span>
+						<span>5</span>
+						<span>6</span>
+						<span class="operator">-</span>
+						<span>1</span>
+						<span>2</span>
+						<span>3</span>
+						<span class="operator">÷</span>
+						<span>0</span>
+						<span>.</span>
+						<span class="eval">=</span>
+						<span class="operator">x</span>
+					</div>
+				</div>            
+<!--                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -215,7 +245,7 @@
                         <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
                     </a>
                 </div>
-            </div>
+ -->            </div>
         </div>
     </section>
 
@@ -593,6 +623,35 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+    
+    <!-- Calculator JavaScript -->
+    <script src="js/calculator.js"></script>
+    
+    <script>
+    $(".dropdown").find('.motor').html("Select <span class='caret'></span>");
+    
+    console(script);
+    $(".dropdown-menu li a").click(
+    		console('data-value');
+		    	$(this).parents(".dropdown").find('.motor').val($(775pro).data('value'));
+		    	$('#units').val($(this).attr('data-value'));
+		    	console('data-value');
+    			}
+    		);
+
+// 	   function callThisFunction() {
+// 	       var dropdown = document.getElementById("motor");
+// 	       var unit = dropdown.options[dropdown.selectedIndex].value;
+// 	       var nameOfUnit = dropdown.options[dropdown.selectedIndex].text;
+	
+// 	       if (unit == "775pro") {
+// 	           alert('unit')
+// 	       } else if (unit == "ml") {
+// 	           // do stuff
+// 	       }
+// 	       // etc.
+// 	   }
+	</script>
 
 </body>
 
