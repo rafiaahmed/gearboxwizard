@@ -244,6 +244,7 @@ th {
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
+    border-radius: 2px;
   }
   .label {
     border: 1px solid #000;
@@ -3019,7 +3020,7 @@ select[multiple].input-lg {
           user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .btn:focus,
 .btn:active:focus,
@@ -3625,6 +3626,7 @@ tbody.collapse.in {
   border-top: 0;
   border-bottom: 4px dashed;
   border-bottom: 4px solid \9;
+  border-radius: 2px;
 }
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
@@ -3961,10 +3963,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-btn > .btn:focus,
 .input-group-btn > .btn:active {
   z-index: 2;
+  border-radius: 2px;
 }
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
+  border-radius: 2px;
 }
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .btn-group {
